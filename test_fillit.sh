@@ -61,6 +61,12 @@ echo "${magenta}Only hashtags${reset}"
 echo "${magenta}Too wide${reset}"
 ../fillit/fillit too_wide
 
+echo "${magenta}Too few lines${reset}"
+../fillit/fillit too_few_lines
+
+echo "${magenta}Too many lines${reset}"
+../fillit/fillit too_many_lines
+
 echo "${magenta}Two newlines at end of file${reset}"
 ../fillit/fillit two_newlines_at_end
 
@@ -88,23 +94,72 @@ echo "${magenta}
 18 horizontal blocks${reset}"
 time ../fillit/fillit ./valid/18_horizontal_blocks
 
+echo "${cyan}
+correct solution:${reset}
+AAAABBBB.
+CCCCDDDD.
+EEEEFFFF.
+GGGGHHHH.
+IIIIJJJJ.
+KKKKLLLL.
+MMMMNNNN.
+OOOOPPPP.
+QQQQRRRR.
+"
+
 echo "${magenta}
 Dangerous tetriminos${reset}"
 time ../fillit/fillit ./valid/dangerous_tetriminos
+
+echo "${cyan}
+correct solution:${reset}
+
+"
 
 echo "${magenta}
 Easy test from eval form${reset}"
 time ../fillit/fillit ./valid/test_easy
 
+echo "${cyan}
+correct solution:${reset}
+ABB.
+ABB.
+A...
+A...
+"
+
 echo "${magenta}
 Test1.prm from eval form${reset}"
 time ../fillit/fillit ./valid/test1.prm
+
+echo "${cyan}
+correct solution:${reset}
+AA
+AA
+"
 
 echo "${magenta}
 Test7.prm from eval form${reset}"
 time ../fillit/fillit ./valid/test7.prm
 
+echo "${cyan}
+correct solution:${reset}
+"
+
 echo "${magenta}
 Max (from Discord)${reset}"
 time ../fillit/fillit ./valid/max
 
+echo "${cyan}
+correct solution:${reset}
+ABBBBCC.DD
+AEFF.CCDDG
+AEEFFHJJGG
+A.ELVH.JGQ
+IIILVHHJQQ
+IRLLVVKTTQ
+RRRUKKKSTT
+NNUUOOOSSX
+NMUPPPOSXX
+NMMMPWWWWX
+"
