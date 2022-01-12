@@ -76,6 +76,9 @@ echo "${magenta}Two newlines between tetriminos${reset}"
 echo "${magenta}5 blocks${reset}"
 ../fillit/fillit 5_blocks
 
+echo "${magenta}3 blocks${reset}"
+../fillit/fillit 3_blocks
+
 echo "${magenta}Not square${reset}"
 ../fillit/fillit not_square
 
@@ -144,6 +147,19 @@ time ../fillit/fillit ./valid/test7.prm
 
 echo "${cyan}
 correct solution:${reset}
+"
+
+echo "${magenta}
+6 tetriminos in 5x5 (from Discord)${reset}"
+time ../fillit/fillit ./valid/discord_6
+
+echo "${cyan}
+correct solution:${reset}
+AA.CC
+ABBCC
+ADBFF
+DDBEF
+DEEEF
 "
 
 echo "${magenta}
