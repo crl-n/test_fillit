@@ -116,7 +116,12 @@ time ../fillit/fillit ./valid/dangerous_tetriminos
 
 echo "${cyan}
 correct solution:${reset}
-
+..A..B
+AAABBB
+.CD...
+CCDD..
+ECD...
+EEE...
 "
 
 echo "${magenta}
@@ -147,6 +152,12 @@ time ../fillit/fillit ./valid/test7.prm
 
 echo "${cyan}
 correct solution:${reset}
+ABBBB.
+ACCC..
+AGGCDD
+A.GDD.
+EEGFF.
+EE..FF
 "
 
 echo "${magenta}
